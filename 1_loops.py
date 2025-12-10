@@ -28,18 +28,13 @@ for subject in subjects:
         continue
     print(subject)
 
-list1000 = list(range[1,1000])
-for number in list1000:
-    if number > 599:
-        break
-    print (number)
 
-list600 = list(range[1,601])
-for number in list600:
-    if 300 <= number <= 500:
+applicants_for_credits = ["Alice ", "Bob", "Charile", "David", "Eve"]
+credit_scores = [720, 680, 590, 610, 750]
+for applicant, score in zip(applicants_for_credits, credit_scores):
+    if score < 600:
         continue
-    print(number)
-
+    print(applicant + "approved for credit with score:" + str(score))
 
 
 # Challenge:
