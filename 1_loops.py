@@ -34,13 +34,15 @@ credit_scores = [720, 680, 590, 610, 750]
 for applicant, score in zip(applicants_for_credits, credit_scores):
     if score < 600:
         continue
-    print(applicant + "approved for credit with score:" + str(score))
+    print(applicant + " approved for credit with score:" + str(score))
 
 
 # Challenge:
 # Use a for loop and range to print each subject along with its index:
 # Example output: "Subject 0: Math"
-
+#subjects = ["Math", "Science", "History", "Art"]
+for index in range(len(subjects)-1):
+    print("Subject " + str(index) +": " + subjects(index))
 
 # Given:
 numbers = [5, 10, 15, 20]
